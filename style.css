@@ -1,5 +1,5 @@
 /* =========================================
-   KUNDU TRADERS - MAIN WEBSITE STYLES
+   KUNDU TRADERS - WEBSITE STYLE
    ========================================= */
 
 * {
@@ -25,20 +25,20 @@ body {
    ========================================= */
 
 header {
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
-    padding: 20px 25px 10px;
+    padding: 12px 25px 0;
     text-align: center;
 }
 
-/* KT logo/header image */
+/* Main KT header image */
 
 .site-logo {
     display: block;
-    width: 900px;
+    width: 820px;
     max-width: 100%;
     height: auto;
-    margin: 0 auto 0;
+    margin: 0 auto;
 }
 
 
@@ -52,26 +52,24 @@ nav {
     align-items: center;
     flex-wrap: wrap;
 
-    gap: 34px;
+    gap: 32px;
 
-    margin-top: 2px;
-    padding: 10px 0 8px;
+    margin-top: -2px;
+    padding: 6px 0 12px;
 }
 
 nav a {
     color: #1f3d2b;
     text-decoration: none;
 
-    font-size: 18px;
+    font-size: 17px;
     font-weight: bold;
 
-    padding: 5px 0;
+    padding: 4px 0;
 
     border-bottom: 2px solid transparent;
 
-    transition:
-        color 0.2s ease,
-        border-color 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 nav a:hover {
@@ -90,31 +88,33 @@ nav a.active {
    ========================================= */
 
 section {
-    max-width: 1100px;
+    max-width: 900px;
     margin: 0 auto;
 
-    padding: 55px 30px 70px;
+    padding: 45px 25px 65px;
 }
 
 h2 {
     color: #8b6b1f;
 
-    font-size: 36px;
+    font-size: 34px;
 
     margin-top: 0;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 h3 {
     color: #1f3d2b;
 
-    font-size: 27px;
+    font-size: 26px;
 
-    margin-bottom: 25px;
+    margin-top: 0;
+    margin-bottom: 22px;
 }
 
 p {
     font-size: 17px;
+    line-height: 1.7;
 }
 
 a {
@@ -123,73 +123,68 @@ a {
 
 
 /* =========================================
+   HOME PAGE
+   ========================================= */
+
+section p {
+    text-align: left;
+}
+
+
+/* =========================================
    CONTACT PAGE
    ========================================= */
 
 .contact-section {
-    max-width: 1250px;
+    max-width: 1100px;
     margin: 0 auto;
 
-    padding: 55px 40px 70px;
+    padding: 45px 30px 65px;
 
     display: grid;
+    grid-template-columns: 0.9fr 1.3fr;
 
-    grid-template-columns: 0.9fr 1.35fr;
-
-    gap: 65px;
+    gap: 55px;
 
     align-items: start;
 }
 
-
-/* LEFT SIDE */
-
 .contact-info h2 {
-    margin: 0 0 22px;
-
-    font-size: 38px;
+    margin-bottom: 20px;
 }
 
 .contact-info h3 {
-    margin: 0 0 38px;
-
-    font-size: 27px;
+    margin-bottom: 32px;
 }
 
 
-/* =========================================
-   CONTACT ITEM
-   ========================================= */
+/* Contact item */
 
 .contact-item {
     display: flex;
-
     align-items: flex-start;
 
-    gap: 20px;
+    gap: 18px;
 
-    margin-bottom: 30px;
+    margin-bottom: 27px;
 }
 
 
-/* =========================================
-   CONTACT ICON
-   ========================================= */
+/* Contact icon */
 
 .contact-icon {
-    width: 55px;
-    min-width: 55px;
+    width: 48px;
+    min-width: 48px;
 
-    height: 55px;
+    height: 48px;
 
     display: flex;
-
     align-items: center;
     justify-content: center;
 }
 
 
-/* LOCATION PIN */
+/* Location icon */
 
 .location-icon {
     position: relative;
@@ -200,8 +195,8 @@ a {
 
     position: absolute;
 
-    width: 32px;
-    height: 32px;
+    width: 29px;
+    height: 29px;
 
     background: #e53935;
 
@@ -209,8 +204,8 @@ a {
 
     transform: rotate(-45deg);
 
-    top: 5px;
-    left: 11px;
+    top: 4px;
+    left: 9px;
 }
 
 .location-icon::after {
@@ -218,49 +213,47 @@ a {
 
     position: absolute;
 
-    width: 10px;
-    height: 10px;
+    width: 9px;
+    height: 9px;
 
     background: white;
 
     border-radius: 50%;
 
-    top: 16px;
-    left: 22px;
+    top: 14px;
+    left: 19px;
 }
 
 
-/* EMAIL ICON */
+/* Email icon */
 
 .email-icon span {
     color: #1f5a42;
 
-    font-size: 38px;
+    font-size: 34px;
 
     line-height: 1;
 }
 
 
-/* =========================================
-   CONTACT TEXT
-   ========================================= */
+/* Contact text */
 
 .contact-text strong {
     display: block;
 
     color: #333;
 
-    font-size: 20px;
+    font-size: 19px;
 
-    margin-bottom: 5px;
+    margin-bottom: 4px;
 }
 
 .contact-text p {
     margin: 0;
 
-    font-size: 17px;
+    font-size: 16px;
 
-    line-height: 1.65;
+    line-height: 1.6;
 
     text-align: left;
 }
@@ -270,8 +263,6 @@ a {
 
     text-decoration: underline;
 
-    text-decoration-thickness: 1px;
-
     text-underline-offset: 3px;
 }
 
@@ -280,18 +271,16 @@ a {
 }
 
 
-/* =========================================
-   CONTACT MESSAGE
-   ========================================= */
+/* Contact description */
 
 .contact-message {
-    max-width: 570px;
+    margin-top: 30px;
 
-    margin-top: 35px;
+    max-width: 540px;
 
-    font-size: 17px;
+    font-size: 16px;
 
-    line-height: 1.75;
+    line-height: 1.7;
 
     text-align: left;
 }
@@ -303,18 +292,17 @@ a {
 
 .map-container {
     width: 100%;
-
-    height: 520px;
+    height: 470px;
 
     overflow: hidden;
 
-    border-radius: 16px;
+    border-radius: 14px;
 
-    background: #fff;
+    background: white;
 
     box-shadow:
-        0 8px 25px rgba(0, 0, 0, 0.12),
-        0 2px 6px rgba(0, 0, 0, 0.08);
+        0 8px 24px rgba(0, 0, 0, 0.12),
+        0 2px 5px rgba(0, 0, 0, 0.08);
 }
 
 .map-container iframe {
@@ -340,15 +328,17 @@ footer {
 
     text-align: center;
 
-    padding: 24px 20px;
+    padding: 22px 20px;
 
-    margin-top: 0;
+    margin: 0;
 }
 
 footer p {
     margin: 0;
 
-    font-size: 16px;
+    font-size: 15px;
+
+    text-align: center;
 }
 
 
@@ -359,32 +349,27 @@ footer p {
 @media (max-width: 900px) {
 
     header {
-        padding: 18px 20px 8px;
+        padding: 10px 18px 0;
     }
 
     .site-logo {
-        width: 850px;
-        max-width: 100%;
+        width: 760px;
     }
 
     nav {
-        gap: 25px;
-    }
-
-    nav a {
-        font-size: 17px;
+        gap: 24px;
     }
 
     .contact-section {
         grid-template-columns: 1fr;
 
-        gap: 45px;
+        gap: 40px;
 
-        padding: 45px 25px 60px;
+        padding: 40px 25px 55px;
     }
 
     .map-container {
-        height: 480px;
+        height: 450px;
     }
 }
 
@@ -396,34 +381,34 @@ footer p {
 @media (max-width: 600px) {
 
     header {
-        padding: 15px 12px 5px;
+        padding: 8px 10px 0;
     }
 
     .site-logo {
-        width: 800px;
+        width: 100%;
         max-width: 100%;
     }
 
     nav {
-        gap: 16px;
+        gap: 14px;
 
-        margin-top: 0;
+        padding: 5px 0 10px;
     }
 
     nav a {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     section {
-        padding: 40px 20px 55px;
+        padding: 35px 20px 50px;
     }
 
     h2 {
-        font-size: 30px;
+        font-size: 29px;
     }
 
     h3 {
-        font-size: 24px;
+        font-size: 23px;
     }
 
     p {
@@ -431,43 +416,43 @@ footer p {
     }
 
     .contact-section {
-        padding: 40px 20px 55px;
+        padding: 35px 18px 50px;
 
-        gap: 35px;
+        gap: 32px;
     }
 
     .contact-info h2 {
-        font-size: 31px;
+        font-size: 30px;
     }
 
     .contact-info h3 {
-        font-size: 23px;
+        font-size: 22px;
     }
 
     .contact-item {
-        gap: 14px;
+        gap: 13px;
     }
 
     .contact-icon {
-        width: 45px;
-        min-width: 45px;
+        width: 42px;
+        min-width: 42px;
     }
 
     .contact-text p {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .map-container {
-        height: 380px;
+        height: 370px;
 
-        border-radius: 12px;
+        border-radius: 11px;
     }
 
     footer {
-        padding: 20px 15px;
+        padding: 19px 15px;
     }
 
     footer p {
-        font-size: 14px;
+        font-size: 13px;
     }
 }
